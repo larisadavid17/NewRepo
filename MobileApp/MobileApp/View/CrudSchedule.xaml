@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.View.CrudSchedule">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Schedule for Employee"
+ Clicked="OnShopListAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+ Margin="50"
+VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+ ItemSelected="OnListViewItemSelected" RowHeight="100">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout >
+                        <Label Text="{Binding Start,StringFormat='Ora sosirii L-V : {0} '}" />
+                        <Label Text="{Binding End ,StringFormat='Ora plecarii L-V : {0}' }" />
+                        <Label Text="{Binding Employee_ID,StringFormat='ID-ul angajatului: {0}' }" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

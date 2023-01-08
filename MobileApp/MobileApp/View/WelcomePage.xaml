@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="MobileApp.View.WelcomePage"  
+             Title="Welcome Page"  
+             NavigationPage.HasBackButton="False"
+             BackgroundImage="bg.jpg">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="70" Spacing="30">
+            <Label Text="Bun Venit!" 
+                 TextColor="DarkOrchid"
+                 FontAttributes="Bold"
+                FontSize="Large"
+                VerticalOptions="CenterAndExpand"   
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Salonul Șic" 
+                 TextColor="DarkOrchid"
+                 FontAttributes="Bold"
+                FontSize="Large" 
+                    VerticalOptions="CenterAndExpand"   
+                HorizontalOptions="CenterAndExpand"
+              />
+            <Label Text="Pagina Admin" 
+                 TextColor="DarkOrchid"
+                 FontAttributes="Bold"
+                FontSize="Large" 
+                    VerticalOptions="CenterAndExpand"   
+                HorizontalOptions="CenterAndExpand"
+              />
+            <Button x:Name="crudemp" Text="Despre Angajați" Clicked="crudemp_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="crudor" Text="Despre Orar" Clicked="crudor_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="crudser" Text="Despre servicii" Clicked="crudser_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="crudcl" Text="Despre clienți" Clicked="crudcl_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="crudapp" Text="Despre Programări" Clicked="crudapp_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 

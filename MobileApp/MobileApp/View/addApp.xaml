@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.View.addApp">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="New Appointment"
+ Clicked="OnShopListAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+ Margin="50"
+VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+  RowHeight="150">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout >
+                        <Label Text="{Binding From,StringFormat='De la: {0:d/M/yyyy HH:mm} '}" />
+                        <Label Text="{Binding To,StringFormat='Pana la: {0:d/M/yyyy HH:mm} '}" />
+                        <Label Text="{Binding Employee_ID,StringFormat='ID-ul angajatului: {0} '}" />
+                        <Label Text="{Binding Client_ID,StringFormat='ID-ul clientului: {0} '}" />
+                        <Label Text="{Binding Service_ID,StringFormat='ID-ul serviciului: {0} '}" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

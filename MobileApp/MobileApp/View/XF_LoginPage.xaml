@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.View.XF_LoginPage"
+             BackgroundImage="bg.jpg">
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="30">
+                <Label Text="Note!" TextColor="Red" FontSize="Medium"/>
+                <Label Text="Daca sunteti admin, credentialele v-au fost înmânate la salon.Daca sunteti client, user-ul și parola sunt: client" TextColor="Red" />
+            <BoxView HeightRequest="10" />
+                <Frame BackgroundColor="#BF043055" HasShadow="False" Padding="50">
+                    
+                    <StackLayout Orientation="Vertical" Spacing="10">
+                    <Label Text="Username" FontSize="Medium" />
+                    <Entry x:Name = "Username" Placeholder = "Username"
+            HeightRequest = "50"    
+            Keyboard="Default"/>
+                    <Label Text="Password" FontSize="Medium"/>
+                    <Entry x:Name ="Password" Placeholder="Password"
+                      HeightRequest="50"
+                      IsPassword="True" />
+                 </StackLayout>
+                 </Frame>
+                <Button x:Name="loginbtn" Text="LogIn" Clicked="Loginbtn_Clicked"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>  

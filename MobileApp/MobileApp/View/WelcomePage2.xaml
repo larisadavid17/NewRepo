@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="MobileApp.View.WelcomePage2"  
+             Title="Welcome Page"  
+             NavigationPage.HasBackButton="False"
+             BackgroundImage="bg.jpg">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="60" Spacing="50">
+            <Label Text="Bun Venit!" 
+                 TextColor="DarkOrchid"
+                 FontAttributes="Bold"
+                FontSize="Large"
+                VerticalOptions="CenterAndExpand"   
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Salonul Șic" 
+                 TextColor="DarkOrchid"
+                 FontAttributes="Bold"
+                FontSize="Large" 
+                    VerticalOptions="CenterAndExpand"   
+                HorizontalOptions="CenterAndExpand"
+              />
+            <Button x:Name="rdemp" Text="Vezi Angajati" Clicked="viewEmp"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="rdser" Text="Vezi servicii" Clicked="viewSer"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="newcl" Text="Client Nou" Clicked="addCl"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="addapt" Text="Adauga Programare" Clicked="addAp"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+            <Button x:Name="addRe" Text="Adauga Reminder" Clicked="addRem"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#FF00FF" 
+                    TextColor="Black"
+                    FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 

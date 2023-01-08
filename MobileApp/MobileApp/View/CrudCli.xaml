@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.View.CrudCli">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Client"
+ Clicked="OnShopListAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+ Margin="50"
+VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"
+ ItemSelected="OnListViewItemSelected" RowHeight="100">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout >
+                        <Label Text="{Binding ID}" />
+                        <Label Text="{Binding Client_Name}" />
+                        <Label Text="{Binding Email}" />
+                        <Label Text="{Binding Phone}" />
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

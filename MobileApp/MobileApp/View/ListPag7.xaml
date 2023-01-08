@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.View.ListPag7"
+             xmlns:local="clr-namespace:MobileApp">
+    <StackLayout Margin="20">
+        <Editor Placeholder="From format: M/d/yyyy HH:mm:ss"
+ Text="{Binding From}"
+ HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:ValidationBehaviour/>
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="To format: M/d/yyyy HH:mm:ss"
+ Text="{Binding To}"
+ HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:ValidationBehaviour/>
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Enter employee id"
+ Text="{Binding Employee_ID}"
+ HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:NumberVal/>
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Enter client id"
+ Text="{Binding Client_ID}"
+ HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:NumberVal/>
+            </Editor.Behaviors>
+        </Editor>
+        <Editor Placeholder="Enter service id"
+ Text="{Binding Service_ID}"
+ HeightRequest="100" >
+            <Editor.Behaviors>
+                <local:NumberVal/>
+            </Editor.Behaviors>
+        </Editor>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Text="Save"
+ Clicked="OnSaveButtonClicked" />
+        </Grid>
+    </StackLayout>
+</ContentPage>
