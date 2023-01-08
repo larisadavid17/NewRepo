@@ -1,2 +1,2 @@
 # ProiectMobileApp
-Realizat de: Raita Anamaria, grupa 5
+Realizat de: Seres Renata, grupa 5
